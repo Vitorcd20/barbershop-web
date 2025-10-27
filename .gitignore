@@ -1,0 +1,9 @@
+node_modules
+
+/pgdata
+
+/src/generated
+
+.env
+
+prisma
