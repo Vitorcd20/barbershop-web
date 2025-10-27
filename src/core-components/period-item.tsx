@@ -27,7 +27,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function PeriodList({ period, children }: Props) {
+export default function PeriodItem({ period, children }: Props) {
   return (
     <section className="border rounded-lg border-gray-600">
       <div className="px-5 py-3 flex items-center justify-between gap-6 border-b border-gray-600">
