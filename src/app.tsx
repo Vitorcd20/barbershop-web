@@ -1,9 +1,14 @@
+import { BrowserRouter, Routes, Route } from "react-router";
+import { PageComponents } from "./pages/page-components";
+import { Home } from "./pages/home";
+
 export function App() {
   return (
-    <>
-     <div>Teste</div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/components" element={<PageComponents />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
