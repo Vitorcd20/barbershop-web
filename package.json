@@ -12,6 +12,7 @@
   "dependencies": {
     "@prisma/client": "^6.18.0",
     "@tailwindcss/vite": "^4.1.16",
+    "@vitejs/plugin-react-swc": "^4.2.0",
     "class-variance-authority": "^0.7.1",
     "dayjs": "^1.11.18",
     "prisma": "^6.18.0",
