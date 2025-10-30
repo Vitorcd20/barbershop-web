@@ -9,7 +9,7 @@ type Props = {
   client: string;
 };
 
-export default function PeriodList({ client, id, time }: Props) {
+export default function PeriodItem({ client, id, time }: Props) {
   const { deleteAppointment } = useAppointment();
 
   function handleDelete(id: string) {
