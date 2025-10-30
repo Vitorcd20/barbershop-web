@@ -7,17 +7,23 @@ export function useAppointment() {
     []
   );
 
-  function createAppointment({ client, datetime }: Omit<Appointment, "id">) {
+  function createAppointment({
+    client,
+    date,
+    time,
+  }: Omit<Appointment, "id" | "createdAt" | "updatedAt">) {
     setAppointments([
       ...appointments,
       {
         id: Math.random().toString(36).substring(2, 9),
         client,
-        datetime,
+        date,
+        time,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
     ]);
   }
-
   function deleteAppointment(id: string) {
     setAppointments(
       appointments.filter((appointment) => appointment.id !== id)
